@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="script.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="countdown();">
 	<div class="main">
 
 		<div class="header">
@@ -14,6 +14,17 @@
 		</div>
 
 		<h2>GENERAL KNOWLEDGE QUESTIONS......</h2>
+		<div> 
+	        Time Left ::
+	        <input id="minutes" type="text" style="width: 10px; 
+	             border: none; font-size: 16px;  
+	            font-weight: bold; color: black;"><font size="5"> : 
+	                        </font> 
+	        <input id="seconds" type="text" style="width: 20px; 
+	                        border: none; font-size: 16px; 
+	                        font-weight: bold; color: black;"> 
+	     </div> 
+		
 		<form id="gkquiz">
 
 			<h2>1.Who is the president of india in 2020?</h2>
@@ -82,7 +93,7 @@
         	<p>Your score is:<span id="score">____</span>/10</p>
 		     <p id="grade"></p>
         </div>
-		
+
       
      
 
