@@ -32,7 +32,7 @@ document.getElementById("gkquiz").onsubmit=function(){
 return false;
 }
 //timer
-var mins = 2; 
+var mins = 3; 
   
         //calculate the seconds 
         var secs = mins * 60; 
@@ -74,6 +74,7 @@ var mins = 2;
                     alert('time up'); 
                     minutes.value = 0; 
                     seconds.value = 0; 
+                    location.reload();
                 } 
                 //if seconds > 0 then seconds is decremented 
                 else { 
