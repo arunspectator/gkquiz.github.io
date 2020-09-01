@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GK QUIZ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body onload="countdown();">
+	<div class="main">
+
+		<div class="header">
+			<h1>GK QUIZ</h1>
+		</div>
+
+		<h2>GENERAL KNOWLEDGE QUESTIONS......</h2>
+		<div style="font-weight: bolder;text-align: right;"> 
+	        Time Left : :
+	        <input id="minutes" type="text" style="width: 10px; 
+	             border: none; font-size: 16px;  
+	            font-weight: bolder; color: black;"><font size="5"> : 
+	                        </font> 
+	        <input id="seconds" type="text" style="width: 20px; 
+	                        border: none; font-size: 16px; 
+	                        font-weight: bold; color: black;"> 
+	     </div> 
+		
+		<form id="gkquiz">
+
+			<h2>1.Who is the president of india in 2020?</h2>
+			<label for="first1"><input type="radio" name="q1" value="0" id="first1" />Abdul kalam</label>
+			<label for="first2"><input type="radio" name="q1" value="0" id="first2" />Rajendra prasad</label>
+			<label for="first3"><input type="radio" name="q1" value="1" id="first3" />Narendra modi</label>
+			<label for="first4"><input type="radio" name="q1" value="0" id="first4" />Rajiv gandhi</label>
+
+			<h2>2.Who invented computer?</h2>
+			<label for="second1"><input type="radio" name="q2" value="1" id="second1"/>Charles Babbage</label>
+			<label for="second2"><input type="radio" name="q2" value="0" id="second2"/>Steve jobs</label>
+			<label for="second3"><input type="radio" name="q2" value="0" id="second3"/>Bill gates</label>
+			<label for="second4"><input type="radio" name="q2" value="0" id="second4"/>Guido von Rossom</label>
+
+			<h2>3.Which is the longest river in the world?</h2>
+			<label for="third1"><input type="radio" name="q3" value="0" id="third1"/>Amazon</label>
+			<label for="third2"><input type="radio" name="q3" value="1" id="third2"/>Nile</label>
+			<label for="third3"><input type="radio" name="q3" value="0" id="third3"/>Ganga</label>
+			<label for="third4"><input type="radio" name="q3" value="0" id="third4"/>Kaveri</label>
+
+			<h2>4.Smallest state in india?</h2>
+			<label for="four1"><input type="radio" name="q4" value="0" id="four1"/>Sikkim</label>
+			<label for="four2"><input type="radio" name="q4" value="0" id="four2"/>Chennai</label>
+			<label for="four3"><input type="radio" name="q4" value="1" id="four3"/>Goa</label>
+			<label for="four4"><input type="radio" name="q4" value="0" id="four4"/>Delhi</label>
+
+			<h2>5.Which insect has eight legs?</h2>
+			<label for="five1"><input type="radio" name="q5" value="1" id="five1"/>Spider</label>
+		    <label for="five2"><input type="radio" name="q5" value="0" id="five2"/>Mosquito</label>
+		    <label for="five3"><input type="radio" name="q5" value="0" id="five3"/>Ladybug</label>
+		    <label for="five4"><input type="radio" name="q5" value="0" id="five4"/>Fly</label>
+
+			<h2>6.National fruit of India?</h2>
+			<label for="six1"><input type="radio" name="q6" value="0" id="six1"/>Apple</label>
+			<label for="six2"><input type="radio" name="q6" value="0" id="six2"/>Banana</label>
+			<label for="six3"><input type="radio" name="q6" value="0" id="six3"/>Papaya</label>
+			<label for="six4"><input type="radio" name="q6" value="1" id="six4"/>Mango</label>
+
+			<h2>7.Which city is called elctronic city of india?</h2>
+			<label for="seven1"><input type="radio" name="q7" value="0" id="seven1"/>Chennai</label>
+			<label for="seven2"><input type="radio" name="q7" value="1" id="seven2"/>Bangalore</label>
+			<label for="seven3"><input type="radio" name="q7" value="0" id="seven3"/>Mumbai</label>
+			<label for="seven4"><input type="radio" name="q7" value="0" id="seven4"/>Kolkata</label>
+
+			<h2>8.Who invented bulb?</h2>
+			<label for="eight1"><input type="radio" name="q8" value="0" id="eight1"/>Stefen hawking</label>
+			<label for="eight2"><input type="radio" name="q8" value="0" id="eight2"/>Isaac Newton</label>
+			<label for="eight3"><input type="radio" name="q8" value="0" id="eight3"/>Einstein</label>
+			<label for="eight4"><input type="radio" name="q8" value="1" id="eight4"/>Thomas alva edison</label>
+
+			<h2>9.Which planet is called morning star?</h2>
+			<label for="nine1"><input type="radio" name="q9" value="1" id="nine1"/>Venus</label>
+			<label for="nine2"><input type="radio" name="q9" value="0" id="nine2"/>Mercury</label>
+			<label for="nine3"><input type="radio" name="q9" value="0" id="nine3"/>Mars</label>
+			<label for="nine4"><input type="radio" name="q9" value="0" id="nine4"/>Moon</label>
+
+			<h2>10.The highest populated country in the world?</h2>
+			<label for="ten1"><input type="radio" name="q10" value="1" id="ten1"/>China</label>
+			<label for="ten2"><input type="radio" name="q10" value="0" id="ten2"/>India</label>
+			<label for="ten3"><input type="radio" name="q10" value="0" id="ten3"/>Russia</label>
+			<label for="ten4"><input type="radio" name="q10" value="0" id="ten4"/>America</label>
+
+			<button type="submit" value="submit" >Submit</button>
+		</form>
+        <div class="result">
+        	<p>Your score is:<span id="score">____</span>/10</p>
+		     <p id="grade"></p>
+        </div>
+
+      
+     
+
+	</div>
+	<hr>
+	<h3 style="text-align: center;">This Quiz App was created By Arun Kumar D & Musharaf Aahel A</h3>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
