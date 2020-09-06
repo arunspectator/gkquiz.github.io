@@ -32,7 +32,7 @@ document.getElementById("gkquiz").onsubmit=function(){
 return false;
 }
 //timer
-var mins = 2; 
+var mins = 1; 
   
         //calculate the seconds 
         var secs = mins * 60; 
