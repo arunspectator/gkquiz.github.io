@@ -1,1 +1,1 @@
-# gkquiz.github.io
+# gkquizbasic
