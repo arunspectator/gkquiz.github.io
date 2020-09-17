@@ -1,1 +1,1 @@
-# gkquizbasic
+# A quiz based program
