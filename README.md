@@ -1,1 +1,1 @@
-# A quiz based program
+# A quiz based website
